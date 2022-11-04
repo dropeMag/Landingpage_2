@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+/*==================================
+pattern
+==================================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.dp_flex{
+    display: flex;
+}
+
+.dp_none{
+    display: none;
+}
+
+:root{
+    --font-title: 'Great Vibes', cursive, 'Courier New', Courier, monospace;
+    --font-text: 'Sacramento', cursive, Arial, Helvetica, sans-serif;
+    --font-arial: Arial, Helvetica, sans-serif;
+
+    --cor-verde: #758c23;
+    --cor-rosa: #f26389;
+    --cor-roxo: #bf5e49;
+    --cor-marrom-escuro: rgb(108, 83, 62);
+    --cor-marrom0: rgb(140, 107, 79);
+    --cor-marrom1: rgb(140, 107, 79, 0.4);
+    --cor-marrom2: rgb(140, 107, 79, 0.6);
+}
+
+/*==================================
+body
+==================================*/
+body{
+    position: relative;
+    background: url(images/img_background_body.jpg) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/*==================================
+modal background
+==================================*/
+#modal_background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 15%;
+    z-index: 1;
+}
+
+/*==================================
+modal form
+==================================*/
+#modal_cadastro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 310px;
+    height: fit-content;
+    border: 2px solid var(--cor-roxo);
+    background-color: rgb(247, 239, 249);
+    border-radius: 20px;
+    color: var(--cor-roxo);
+    padding: 28px;
+    font-family: var(--font-arial);
+    z-index: 2;
+}
+
+#modal_cadastro form h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+#modal_cadastro form fieldset{
+    border: none;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#modal_cadastro form fieldset div{
+    flex-direction: column;
+}
+
+#modal_cadastro form fieldset div label{
+    font-size: 18px;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+#modal_cadastro form fieldset div input{
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--cor-rosa);
+}
+
+#modal_cadastro form fieldset div input:focus{
+    border-color: black;
+    box-shadow: 0 0 4px var(--cor-rosa);
+}
+
+#modal_cadastro form fieldset div#div_button button{
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid white;
+    outline: 2px solid var(--cor-rosa);
+    background-color: var(--cor-rosa);
+}
+
+#modal_cadastro form fieldset div#div_button button:hover{
+    scale: 1.1;
+    box-shadow: 0 0 15px var(--cor-rosa);
+}
+
+/*==================================
+background image
+==================================*/
+#img_background img{
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    right: -2px;
+    width: 38%;
+    border-radius: 68% 0px 0px 68%;
+    border: 1px solid transparent;
+    box-shadow: 0 0 15px 3px rgba(174, 174, 174, 0.5);
+}
+
+/*==================================
+header
+==================================*/
+header{
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+/* logo & company name */
+header div{
+    align-items: center;
+}
+
+header div img{
+    width: 40px;
+}
+
+header div h6{
+    margin-left: 8px;
+    font-size: 30px;
+    font-family: var(--font-title);
+    color: var(--cor-verde);
+}
+
+/* navbar */
+header nav ul{
+    gap: 15px;
+    font-family: var(--font-arial);
+    color: var(--cor-marrom-escuro);
+    font-weight: 600;
+}
+
+header nav ul li{
+    cursor: pointer;
+    opacity: 80%;
+    padding: 5px;
+}
+
+header nav ul li:hover{
+    opacity: 100%;
+}
+
+/*==================================
+main content
+==================================*/
+main{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 60px;
+}
+
+/* div with content */
+main > div{
+    max-width: 58%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+/*==================================
+"mother's day" title
+==================================*/
+#sct_title{
+    font-family: var(--font-title);
+}
+
+#sct_title h2{
+    font-size: 35px;
+    margin-bottom: -20px;
+    font-weight: 600;
+    color: var(--cor-rosa);
+}
+
+#sct_title h1{
+    font-size: 95px;
+    letter-spacing: 5px;
+    color: var(--cor-rosa);
+}
+
+/*==================================
+prizes section
+==================================*/
+#sct_prizes{
+    font-family: var(--font-text);
+    font-size: 35px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#sct_prizes > p{
+    font-size: 35px;
+    color: var(--cor-marrom0);
+}
+
+/* main section */
+#sct_prizes #prizes{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* individual sections */
+#sct_prizes #prizes > div{
+    border: 2px solid white;
+    box-shadow: 0 0 15px rgb(155, 155, 155);
+    color: white;
+    border-radius: 20px;
+    width: 30%;
+    overflow: hidden;
+    user-select: none;
+}
+
+#sct_prizes #prizes div div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-marrom1);
+}
+
+#sct_prizes #prizes div:hover{
+    scale: 1.1;
+    background-color: var(--cor-marrom2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    transition: scale .3s, background-color .3s, box-shadow .3s;
+}
+
+#sct_prizes #prizes div#prize1{
+    background: url(images/prizes/img_esfoliacao.jpg) center no-repeat;
+    background-size: cover;
+}
+
+#sct_prizes #prizes div#prize2{
+    background: url(images/prizes/img_massagem.jpg) center no-repeat;
+    background-size: cover;
+}
+
+#sct_prizes #prizes div#prize3{
+    background: url(images/prizes/img_drenagem.jpg) center no-repeat;
+    background-size: cover;
+}
+
+/*==================================
+button section
+==================================*/
+#sct_form{
+    margin-top: 70px;
+}
+
+#sct_form button{
+    font-family: var(--font-arial);
+    border: 1px solid white;
+    outline: 2px solid var(--cor-verde);
+    color: white;
+    /* width: 100px;
+    height: 40px; */
+    padding: 9px 18px;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: var(--cor-verde);
+    cursor: pointer;
+    user-select: none;
+}
+
+#sct_form button:hover{
+    scale: 1.2;
+    box-shadow: 0 0 15px var(--cor-verde);
+}
+
+/*==================================
+horizontal line
+==================================*/
+hr{
+    margin: 65px auto 0;
+    width: 30%;
+    background-color: var(--cor-marrom1);
+    height: 2px;
+    border: none;
+}
+
+/*==================================
+prize draw informations
+==================================*/
+#sct_date{
+    font-family: var(--font-arial);
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#sct_date span{
+    font-weight: 600;
+    color: var(--cor-verde);
+}
+
+#sct_date a{
+    font-weight: 600;
+    color: var(--cor-verde);
+    position: relative;
+}
+
+#sct_date a:hover::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    padding: 0 8px 8px 0;
+    border: 2px solid var(--cor-verde);
+    border-bottom-right-radius: 10px;
+    border-top: none;
+    border-left: none;
+    z-index: -1;
+}

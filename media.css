@@ -1,0 +1,268 @@
+@media (orientation: landscape) and (max-width: 995px){
+    body{
+        overflow-y: scroll;
+    }
+    
+    #img_background img{
+        top: 250px;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        border-radius: 100%;
+        min-width: 390px;
+        max-width: 400px;
+    }
+
+    main > div{
+        max-width: none;
+        min-width: 100%;
+    }
+
+    #sct_title{
+        margin-top: 30px;
+        width: 58%;
+    }
+
+    #sct_title h2{
+        font-size: 60px;
+    }
+    
+    #sct_title h1{
+        font-size: 95px;
+        letter-spacing: 5px;
+        color: var(--cor-rosa);
+    }
+
+    #sct_prizes{
+        margin-top: 80px;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 815px){
+    #img_background img{
+        visibility: hidden;
+    }
+
+    #sct_title{
+        width: 100%;
+    }
+    
+    #sct_prizes{
+        margin-top: 10px;
+    }
+
+    #sct_prizes #prizes > div{
+        width: 31%;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 460px){
+    #modal_cadastro{
+        top: 5%;
+        transform: translate(-50%, 0);
+    }
+}
+
+/*  */
+
+@media (orientation: portrait){
+    #img_background img{
+        bottom: 50%
+    }
+}
+
+@media (orientation: portrait) and (max-width: 1000px){
+    body{
+        overflow-y: scroll;
+    }
+
+    #img_background img{
+        top: 300px;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        border-radius: 100%;
+        min-width: 390px;
+        max-width: 400px;
+    }
+
+    header{
+        height: 100px;
+    }
+
+    header div img{
+        width: 70px;
+    }
+    
+    header div h6{
+        font-size: 47px;
+    }
+
+    header nav ul li{
+        font-size: 28px;
+    }
+
+    main > div{
+        max-width: none;
+        min-width: 100%;
+    }
+
+    #sct_title{
+        margin-top: 30px;
+        width: 58%;
+    }
+
+    #sct_title h2{
+        font-size: 60px;
+    }
+    
+    #sct_title h1{
+        font-size: 95px;
+        letter-spacing: 5px;
+        color: var(--cor-rosa);
+    }
+
+    #sct_prizes{
+        margin-top: 80px;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 890px){
+    #img_background img{
+        left: 50%;
+        top: 650px;
+    }
+
+    #modal_cadastro{
+        position: fixed;
+        margin-top: 10%;
+        margin-left: 10%;
+        scale: 1.6;
+    }
+
+    header{
+        flex-direction: column;
+        height: 230px;
+        padding: 30px 0 15px 0;
+        border-bottom: 1px solid var(--cor-verde);
+    }
+
+    header div img{
+        width: 110px;
+    }
+    
+    header div h6{
+        font-size: 80px;
+    }
+
+    main{
+        padding-top: 280px;
+    }
+
+    #sct_title{
+        scale: 1.25;
+        margin: auto;
+        width: fit-content;
+    }
+    
+    #sct_prizes{
+        margin-top: 400px;
+    }
+
+    #sct_prizes > p{
+        font-size: 60px;
+    }
+
+    #sct_prizes #prizes{
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    #sct_prizes #prizes > div{
+        width: 350px;
+        min-height: 150px;
+    }
+
+    #sct_prizes #prizes div div{
+        min-height: 150px;
+        font-size: 50px;
+    }
+
+    #sct_form{
+        margin-top: 150px;
+    }
+
+    #sct_form button{
+        scale: 1.8;
+    }
+
+    #sct_form button:hover{
+        scale: 2;
+    }
+
+    #sct_date{
+        font-size: 28px;
+        margin-top: 50px;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 760px){
+    #img_background img{
+        top: 790px;
+    }
+
+    #sct_title{
+        width: 70%;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 610px){
+    #img_background img{
+        visibility: hidden;
+    }
+
+    #modal_cadastro{
+        margin-left: 15%;
+    }
+
+    header div{
+        scale: .8;
+    }
+
+    header nav{
+        position: relative;
+        visibility: hidden;
+    }
+
+    header nav::after{
+        content: '< Menu';
+        visibility: visible;
+        position: absolute;
+        display: flex;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-family: var(--font-arial);
+        color: var(--cor-marrom-escuro);
+        font-weight: 600;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    #sct_title{
+        scale: 1.1;
+    }
+
+    #sct_prizes{
+        margin-top: 50px;
+    }
+
+    #sct_date{
+        width: 60%;
+        height: 100px;
+    }
+}

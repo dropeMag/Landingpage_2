@@ -8,7 +8,7 @@
 
 ---
 
-<h4 align="center"> :construction: Under Development :construction: </h4>
+<h4 align="center"> :white_check_mark: Done :white_check_mark: </h4>
 
 :airplane: Link:
 https://dropemag.github.io/Landingpage_2/
